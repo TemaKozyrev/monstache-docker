@@ -1,0 +1,7 @@
+namespace-regex = '^empo\.(forum_messages|forum_topics|forum_faq_articles|forum_news)$'
+
+direct-read-namespaces = ["empo.forum_topics", "empo.forum_messages", "empo.forum_faq_articles", "empo.forum_news"]
+
+mapper-plugin-path="./myplugin.so"
+
+change-stream-namespaces=["empo"]
