@@ -18,7 +18,9 @@ func Map(input *monstachemap.MapperPluginInput) (output *monstachemap.MapperPlug
 	} else if input.Collection == "forum_faq_articles" {
 		tempDoc["_id"] = doc["_id"]
 		tempDoc["topicId"] = doc["topicId"]
+		tempDoc["titleId"] = doc["titleId"]
 		tempDoc["title"] = doc["title"]
+		tempDoc["preview"] = doc["preview"]
 		tempDoc["body"] = doc["body"]
 		tempDoc["createdAt"] = doc["createdAt"]
 	} else if input.Collection == "forum_news" {
